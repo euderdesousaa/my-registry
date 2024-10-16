@@ -1,4 +1,4 @@
-package tech.engix.jwtutils.service;
+package tech.engix.jwtutils;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;

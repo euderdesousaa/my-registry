@@ -10,8 +10,13 @@ import javax.crypto.SecretKey;
 @Service
 public class JwtUtils {
 
+    private final String jwtSecret;
+
+    public JwtUtils(String jwtSecret) {
+        this.jwtSecret = jwtSecret;
+    }
+
     private SecretKey key() {
-        String jwtSecret = System.getenv("JWT_SECRET");
         byte[] keyBytes = Decoders.BASE64.decode(jwtSecret);
         return Keys.hmacShaKeyFor(keyBytes);
     }

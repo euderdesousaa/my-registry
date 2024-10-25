@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 import javax.crypto.SecretKey;
 
 @Service
-public class JwtUtils {
+public class Jwtutils {
 
     private final String jwtSecret;
 
-    public JwtUtils(String jwtSecret) {
+    public Jwtutils(String jwtSecret) {
         this.jwtSecret = jwtSecret;
     }
 
